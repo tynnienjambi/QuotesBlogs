@@ -57,4 +57,4 @@ mkvirtualenv virtual
 
 ## Author
 
-* Design and developed by: [timothy Ndung'u
+* Design and developed by: Tinisha Kamau
