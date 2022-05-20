@@ -1,0 +1,36 @@
+.navbar{
+    background: rgb(96, 204, 33);
+    background: linear-gradient(90deg, rgb(59, 33, 204) 33%, rgba(27,43,54,1) 91%);
+    color: rgb(238, 30, 30);
+}
+
+.navbar-brand{
+    color: rgb(22, 228, 15);
+}
+.nav-item>a{
+    color: #1b2b36;
+}
+
+.jumbotron{
+    background-image: url(../images/Office\ Decor\ Ideas.jpeg);
+    background-position:cover;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    color: white;
+}
+
+.card-header{
+    background: rgb(20, 108, 209);
+    background: linear-gradient(90deg, rgb(141, 33, 204) 33%, rgba(27,43,54,1) 91%);
+    color: white;
+}
+p{
+    color: #1b2b36;
+}
+.thoughts{
+    height: 250px;
+}
+.white{
+    height: 240px;
+}

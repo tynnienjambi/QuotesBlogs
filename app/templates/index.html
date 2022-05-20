@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+
+{% block app_content %}
+    <div class="jumbotron text-center mt-1">
+        <h1 class="display-4">Hello, There!</h1>
+        <h4>Thank you for visiting Blog App</h4>
+        <p class="lead">Subscribe to our mail list to receive our blog alerts.</p>
+        <hr class="my-4">
+        <h6>Welcome to Easy Blogs.Here you can create your own blogs, read and comment on others and also post quotes for readers.</h6>
+        <p>In the meantime explore, create and enjoy our experience</p>
+    </div>
+    <div class="random-quote">
+        <div class="card">
+            <div class="card-header text-center">
+              Quotes For The Day
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <h5>
+                    <q>
+                        {{ quotes.quote_message }}
+                    </q>    
+                </h5>
+                <footer class="blockquote-footer">{{ quotes.author }}</footer>
+              </blockquote>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <!-- empty -->
+      </div>
+      <div class="col-md-4">
+          <img src="../static/images/Office Decor Ideas.jpeg" alt="thoughts" class="image-fluid white img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <!-- blogpost -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="../static/images/7 quick tips .jpeg" alt="thoughts" class="image-fluid thoughts img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <!-- empty -->
+      </div>
+      <div class="col-md-4">
+        <img src="../static/images/6 Amazing Food .jpeg" alt="thoughts" class="image-fluid thoughts img-thumbnail">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <!-- empty -->
+      </div>
+      <div class="col-md-4">
+          <img src="../static/images/15 Zero Waste .jpeg" alt="thoughts" class="image-fluid white img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <!-- blogpost -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <!-- empty -->
+      </div>
+      <div class="col-md-4">
+          <img src="../static/images/Beauty 101.jpeg" alt="thoughts" class="image-fluid white img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <!-- blogpost -->
+      </div>
+    </div>
+    <div class="row blog">
+      <div class="col-md-12">
+        {% for blog in blogs %}
+        <div class="card mt-3">
+          <div class="card-header text-center">
+            {{ blog.blog_title}}
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>{{ blog.blog_post}}</p>
+            </blockquote>
+          </div>
+      </div>
+        {% endfor %}
+      </div>
+    </div>
+{% endblock %}
