@@ -1,4 +1,4 @@
-
+# Author Tinisha Kamau
 # Blog Web App
 This application enables user to view, random quotes, blog posts and are able to login,register and acess premium fuctions
 
